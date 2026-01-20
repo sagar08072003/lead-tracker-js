@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lead Management Tool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Lead Management Tool</h1>
+
+    <form id="leadForm">
+      <input type="text" id="name" placeholder="Client Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="text" id="company" placeholder="Company" />
+      <button type="submit" class="btn-primary">Save Lead</button>
+    </form>
+
+    <input type="text" id="search" placeholder="Search leads..." />
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Company</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="leadTable"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
